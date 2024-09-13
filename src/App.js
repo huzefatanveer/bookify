@@ -6,13 +6,14 @@ import LoginPage from "./pages/Login";
 
 import MyNavBar from "./components/Navbar";
 import ListingPage from "./pages/List";
+import HomePage from "./pages/Home";
 
 function App() {
   return (
     <div>
       <MyNavBar/>
       <Routes>
-        <Route path="/" element = {<h1>Home</h1>} />
+        <Route path="/" element = {<HomePage/>} />
         <Route path="/login" element = {<LoginPage/>} />
         <Route path="/register" element = {<RegisterPage />} />
         <Route path="/book/list" element = {<ListingPage />} />
