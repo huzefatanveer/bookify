@@ -7,7 +7,9 @@ import LoginPage from "./pages/Login";
 import MyNavBar from "./components/Navbar";
 import ListingPage from "./pages/List";
 import HomePage from "./pages/Home";
-
+import BookDetailPage from "./pages/Detail";
+import OrdersPage from "./pages/ViewOrder";
+import ViewOrderDetails from "./pages/viewOrderDetail";
 function App() {
   return (
     <div>
@@ -17,6 +19,10 @@ function App() {
         <Route path="/login" element = {<LoginPage/>} />
         <Route path="/register" element = {<RegisterPage />} />
         <Route path="/book/list" element = {<ListingPage />} />
+        <Route path="/book/list" element = {<ListingPage />} />
+        <Route path="/book/view/:bookId" element = {<BookDetailPage />} />
+        <Route path="/books/orders" element = {<OrdersPage />} />
+        <Route path="/books/orders/:bookId" element = {<ViewOrderDetails />} />
       </Routes>
     </div>
   );

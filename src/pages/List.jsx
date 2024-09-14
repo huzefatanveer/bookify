@@ -45,7 +45,7 @@ const ListingPage = () => {
                 placeholder="Enter Price" />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Label>Price</Form.Label>
+                <Form.Label>CoverPic</Form.Label>
                 <Form.Control onChange={(e) => setCoverPic(e.target.files[0])}
                // value={coverPic}
                 type="file" 
